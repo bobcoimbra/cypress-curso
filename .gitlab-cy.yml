@@ -1,4 +1,4 @@
-image: 'cypress/base'
+image: cypress/base:14.16.0
 
 
 stages:
@@ -6,7 +6,7 @@ stages:
   - e2e
 
 install:
-  image: cypress/base
+  image: cypress/base:14.16.0
   stage: build
 
   script:
@@ -14,7 +14,7 @@ install:
 
 
 e2e-testing:
-  image: cypress/base
+  image: cypress/base:14.16.0
   stage: e2e
 
   script:
