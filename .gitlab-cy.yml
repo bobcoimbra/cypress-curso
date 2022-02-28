@@ -1,10 +1,11 @@
 image: cypress/base:14.16.0
 
 stages:
-  -e2e
+  -Test
 
-end-to-end testing:
-  stage: e2e
+local-e2e:
+  stage: test
+
   script:
     - npm ci --prefer-offline
     - npm start &
