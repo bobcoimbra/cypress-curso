@@ -3,15 +3,17 @@ stages:
   - e2e
 
 install:
-  image: cypress/base:9.1.0
+  image: cypress/base:10
   stage: build
+
   script:
-    - npm install
+    - npm ci
 
 
 e2e-testing:
-  image: cypress/base:9.1.0
+  image: cypress/base:10
   stage: e2e
+  
   script:
     - npm test
 
