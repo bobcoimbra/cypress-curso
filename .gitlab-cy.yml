@@ -1,9 +1,12 @@
+image: 'cypress/base'
+
+
 stages:
   - build
   - e2e
 
 install:
-  image: cypress/base:10
+  image: cypress/base
   stage: build
 
   script:
@@ -11,9 +14,9 @@ install:
 
 
 e2e-testing:
-  image: cypress/base:10
+  image: cypress/base
   stage: e2e
-  
+
   script:
     - npm test
 
